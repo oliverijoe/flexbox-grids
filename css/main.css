@@ -97,40 +97,67 @@ textarea {
 
 
 html {
-  background-color: rgb(3, 70, 33);
+  background: url("../img/bkgd.jpg");
   height: 100%;
   width: 100%;
 }
 
 body {
-  font-family: 'Lora', sans-serif;
+    font-family: 'Oxygen', sans-serif;
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
   color:#fff
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 400;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
+header {
+    font-size: 3.5em;
 }
 
-.div-1, .div-2, .div-3 {
+header, footer {
+    height: 80px;
+    width: 100%;
+    color:rgb(32, 32, 32);
+    background: rgba(218, 216, 216, 0.5);
+    font-family: 'Special Elite', cursive;
+}
+
+main {
+    background-color: rgba(8, 83, 42, 0.5);
+    height: 250px;
+    width: 100%;
+    font-size: 1.75em;
+    padding: 0 4em;
+  }
+
+header,
+footer,
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+    justify-content: space-between;
+    background: rgba(233, 178, 130, 0.5);
+}
+
+.flex-items {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   line-height: 1.5em;
   font-size: 1.2em;
-  background-color: rgb(3, 70, 33);
   height: auto;
   display: flex;
   width: 30%;
   justify-content: center;
   align-items: center;
-  border-right: #fff 1em;
-  
+  padding: 1em;
+  color:rgb(32, 32, 32);
+  font-weight: 800;
 }
 
 
